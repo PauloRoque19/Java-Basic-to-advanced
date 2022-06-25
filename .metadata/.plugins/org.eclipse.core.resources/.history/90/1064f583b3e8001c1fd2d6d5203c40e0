@@ -1,0 +1,10 @@
+package org.cursoteste.primeiroteste;
+
+public class Pessoa {
+
+	private String nome;
+	public String getNome() {
+		return this.nome;
+	}
+
+}

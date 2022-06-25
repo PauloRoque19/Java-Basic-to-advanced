@@ -1,0 +1,5 @@
+package org.cursoteste.primeiroteste;
+
+public class PessoaSemNotException extends RuntimeException{
+	
+}

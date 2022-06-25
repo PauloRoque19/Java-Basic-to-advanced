@@ -1,0 +1,11 @@
+package org.cursoteste.primeiroteste;
+
+public class Pessoa {
+
+	private String nome;
+	public String getNome() {
+		// TODO Auto-generated method stub
+		return this.nome;
+	}
+
+}

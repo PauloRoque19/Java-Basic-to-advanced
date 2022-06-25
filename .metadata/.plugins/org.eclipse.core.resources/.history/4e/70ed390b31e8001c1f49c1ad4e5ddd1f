@@ -1,0 +1,12 @@
+package org.cursoteste.primeiroteste;
+
+import java.util.List;
+
+public class CadastroPessoas {
+
+	public List<Pessoa> getPessoas() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

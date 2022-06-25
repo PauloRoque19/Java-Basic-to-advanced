@@ -1,0 +1,26 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.MyComparator;
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		List<Product> products = new  ArrayList<>();
+		
+		products.add(new Product("TV", 900.00));
+		products.add(new Product("Notebook", 1220.00));
+		products.add(new Product("Tablet", 450.00));
+		
+		products.sort(new MyComparator());
+		
+		for(Product p: products) {
+			System.out.println(p);
+		}
+	}
+
+}

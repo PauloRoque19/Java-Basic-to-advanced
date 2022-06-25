@@ -1,0 +1,11 @@
+package org.cursoteste.primeiroteste;
+
+import org.junit.Test;
+
+public class CadastroPessoasTest {
+
+	@Test
+	public void deveCriarCadastroDePessoas() {
+		CadastroPessoas cadastro = new CadastroPessoas();
+	}
+}

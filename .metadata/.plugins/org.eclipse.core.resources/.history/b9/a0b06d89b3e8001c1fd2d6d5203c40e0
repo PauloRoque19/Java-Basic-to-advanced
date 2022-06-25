@@ -1,0 +1,33 @@
+package org.cursoteste.primeiroteste;
+
+import org.assertj.core.api.Assertions;
+import org.junit.Test;
+
+public class CadastroPessoasTest {
+
+	@Test
+	public void deveCriarCadastroDePessoas() {
+		CadastroPessoas cadastro = new CadastroPessoas();
+		
+		Assertions.assertThat(cadastro.getPessoas()).isEmpty();
+	}
+	
+	@Test
+	public void deveAdicionarUmaPessoa() {
+		CadastroPessoas cadastro = new CadastroPessoas();
+		Pessoa pessoa = new Pessoa();
+		pessoa.setNome("José");
+		cadastro.adicionar();
+		Assertions.assertThat(cadastro.getPessoas())
+			.isNotEmpty()
+			.hasSize(1);
+	}
+	
+	@Test(expected = PessoaSemNotException.class)
+	public void naoDeveAdicionarPessoaComNomeVazio() {
+		CadastroPessoas cadastro = new CadastroPessoas();
+		Pessoa pessoa = new Pessoa();
+		
+		cadastro.adicionar(pessoa);
+	}
+}

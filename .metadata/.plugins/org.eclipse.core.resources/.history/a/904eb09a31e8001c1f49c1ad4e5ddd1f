@@ -1,0 +1,14 @@
+package org.cursoteste.primeiroteste;
+
+import org.assertj.core.api.Assertions;
+import org.junit.Test;
+
+public class CadastroPessoasTest {
+
+	@Test
+	public void deveCriarCadastroDePessoas() {
+		CadastroPessoas cadastro = new CadastroPessoas();
+		
+		Assertions.assertThat(cadastro.getPessoas()).isEmpty();
+	}
+}
